@@ -7,7 +7,85 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <title>Login</title>
     <link rel="stylesheet" href="style.css" />
+</head><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale-1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <title>Carrito</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+ 
+<body class="bg-gray-200 flex justify-center items-center h-screen">
+   
+        <div class="container mx-auto px-4 py-8">
+            <h2 class="text-2xl font-bold mb-4">Carrito de Compras</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Lista de elementos en el carrito -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Tu Carrito</h3>
+                    <div class="bg-white rounded shadow-md p-4">
+                        <!-- Item 1 -->
+                        <div class="flex items-center mb-4">
+                            <img src="imagen-producto.jpg" alt="Producto" class="w-16 h-16 mr-4">
+                            <div>
+                                <h4 class="font-semibold">Nombre del Producto</h4>
+                                <p class="text-gray-500">Q20.00</p>
+                                <input type="number" value="1" class="form-input w-16 mt-2">
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="flex items-center mb-4">
+                            <img src="imagen-producto.jpg" alt="Producto" class="w-16 h-16 mr-4">
+                            <div>
+                                <h4 class="font-semibold">Nombre del Producto</h4>
+                                <p class="text-gray-500">Q25.00</p>
+                                <input type="number" value="1" class="form-input w-16 mt-2">
+                            </div>
+                        </div>
+                        <!-- Otros elementos en el carrito -->
+                        <!-- ... -->
+                    </div>
+                </div>
+                <!-- Total y métodos de pago -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Resumen de Compra</h3>
+                    <div class="bg-white rounded shadow-md p-4">
+                        <!-- Total -->
+                        <div class="flex justify-between mb-4">
+                            <p>Total:</p>
+                            <p>Q45.00</p>
+                        </div>
+                        <!-- Métodos de Pago -->
+                        <div class="mb-4">
+                            <h4 class="font-semibold mb-2">Métodos de Pago</h4>
+                            <div>
+                                <label class="flex items-center mb-2">
+                                    <input type="radio" name="payment" class="form-radio mr-2" value="paypal">
+                                    <span>PayPal</span>
+                                </label>
+                                <label class="flex items-center mb-2">
+                                    <input type="radio" name="payment" class="form-radio mr-2" value="credit-card">
+                                    <span>Tarjeta de Crédito/Debito</span>
+                                </label>
+                                <!-- Otros métodos de pago -->
+                                <!-- ... -->
+                            </div>
+                        </div>
+                        <!-- Botón de Pagar -->
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Pagar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+</body>
+
+</html>
+
  
 <body class="bg-gray-200 flex justify-center items-center h-screen">
   <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
