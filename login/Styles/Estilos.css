@@ -1,0 +1,21 @@
+body {
+    background-color: #daf3ea;
+}
+
+.btnprinc {
+    background-color: #85e6c0;
+    color: #0b0b0d;
+}
+.btnprinc:hover {
+    background-color: #6bb39b;
+}   
+
+.txtRedir{
+    color: #000000;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
