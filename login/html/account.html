@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta</title>
+    <link rel="stylesheet" href="../Styles/account.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mi Cuenta</h1>
+        <div class="user-info">
+            <p><strong>Nombre:</strong> <span id="nombre"></span></p>
+            <p><strong>Correo:</strong> <span id="correo"></span></p>
+            <p><strong>Teléfono:</strong> <span id="telefono"></span></p>
+            <!-- Agrega más campos según sea necesario -->
+        </div>
+        <button id="eliminar-cuenta">Eliminar Cuenta</button>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form id="eliminar-cuenta-form">
+                    <input type="password" id="password" placeholder="Contraseña">
+                    <button type="submit">Confirmar Eliminación</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../js/account.js"></script>
+</body>
+</html>

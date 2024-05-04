@@ -1,0 +1,346 @@
+
+/*Paleta de colores*/
+/*https://paletadecolores.com.ar/paleta/f7f4e8/daf3ea/85e6c0/6bb39b/0b0b0d/*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f7f4e8;
+}
+
+/* Estilos para el encabezado */
+.main-header {
+    background-color: #6bb39b;
+    color: #fff;
+    padding: 0.2% 0;
+    text-align: center;
+}
+
+.conten{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+    
+  .logo img {
+      text-align: center;
+      width: 80%;
+      height: 50px;
+      border-radius: 5px;
+      margin: 15px;
+  }
+    
+  .input{
+      background: #ffffff;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height: 38px;
+      border-radius: 5px;
+  }  
+  
+  .bus {
+    display: inline-block;
+    background-color: #ff9900;
+    color: black;    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .bus:hover {
+    background-color: #ff6600;
+    transition: 0.2s ease-in-out all;
+  }
+
+.main-title {
+    margin: 0;
+}
+
+/*Estilos para carrito y usuario*/
+.icons {
+    display: flex;
+    align-items: center; /* Centra verticalmente los íconos */
+}
+
+.icon-cart {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    color: #fff;
+}
+
+.icon-cart-container {
+    position: relative;
+}
+
+.icon-user {
+    width: 22px;
+    height: 22px;
+    margin-right: 20px;
+    color: #fff;
+    position: relative;
+}
+
+.icon-user:hover {
+    cursor: pointer;
+}
+
+/* Estilos para la navegación */
+.main-nav {
+    background-color: #555;
+    padding: 10px;
+    overflow: hidden;
+    height: auto;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    list-style-type: none all;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline;
+    margin-right: 15px;
+    margin-left: 0px;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+}
+
+.nav-item svg {
+    vertical-align: middle;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: -5px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sub-nav {
+    background-color: #555;
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    z-index: 1;
+}
+
+.sub-nav .nav-list {
+    list-style-type: none all;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.sub-nav .nav-item {
+    display: inline;
+    margin-right: 0px;
+}
+
+.sub-nav .nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sub-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+.info {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: calc(100% - 40px); 
+}
+
+.contact {
+    margin-bottom: 8px;
+}
+
+.name {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    width: 300px;
+}
+
+.email {
+    color: #888;
+    display: inline-block;
+    margin-left: 20px; 
+}
+
+.carnet {
+    color: #888;
+    display: inline-block;
+    margin-left: 10px; 
+    width: 110px;
+}
+
+/* Estilos para el menú lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicialmente oculto fuera de la pantalla */
+    width: 250px;
+    height: 100%;
+    background-color: #0b0b0d;
+    padding-top: 20px;
+    transition: left 0.3s ease; /* Transición suave para animar la aparición/desaparición */
+}
+
+.sidebar-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.sidebar-link {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.sidebar-link:hover {
+    background-color: #85e6c0;
+    color: #000000;
+}
+
+.sidebar-item svg {
+    vertical-align: middle;
+    margin-left: 5px;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar-item .sidebar-link:hover svg {
+    color: black; /* Cambia el color del ícono a negro cuando el enlace está en estado de hover */
+}
+
+/* Estilos para mostrar el menú lateral */
+.show {
+    left: 0;
+}
+
+/*Estilos para submenus de menu lateral*/
+.sidebar-submenu li {
+    margin-bottom: 5px; /* Espaciado entre elementos del submenú */
+}
+
+.sidebar-submenu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.sidebar-submenu {
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+
+.sidebar-submenu.show {
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+.sidebar-submenu a:hover {
+    background-color: #85e6c0;
+    color: #000000;
+}
+
+/*Estilos para icono de usuario*/
+.user-menu {
+    display: none;
+    position: absolute;
+    width: auto;
+    z-index: 1;
+    background: #0b0b0d;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.icon-account {
+    width: 15px;
+    height: 15px;
+}
+
+.user-menu.show {
+    display: block;
+}
+
+.user-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-menu ul li {
+    margin-bottom: 5px;
+}
+
+.user-menu ul li .user-menu-account a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.user-menu ul li .user-menu-account a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la sección principal */
+.main-section {
+    padding: 20px;
+}
+
+.section-title {
+    margin: 0;
+}
+
+.section-content {
+    margin: 0;
+}
+
+/* Estilos para el pie de página */
+.main-footer {
+    background-color: #daf3ea;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
