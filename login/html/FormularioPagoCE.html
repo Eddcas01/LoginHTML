@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago</title>
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="../Styles/EstilosCarrito.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class=" py-12">
+    <div class="max-w-md mx-auto bg-white p-8 rounded shadow-md">
+        <h2 class="text-2xl font-semibold mb-4">Formulario De Pago Contra Entrega</h2>
+        
+        <!-- Sección 1: Información del cliente -->
+        <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-2">Información del Cliente</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label for="nombre" class="block text-gray-700">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" class="form-input mt-1 w-full">
+                </div>
+                <div>
+                    <label for="apellido" class="block text-gray-700">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" class="form-input mt-1 w-full">
+                </div>
+                <div>
+                    <label for="telefono" class="block text-gray-700">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" class="form-input mt-1 w-full">
+                </div>
+                <div>
+                    <label for="correo" class="block text-gray-700">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" class="form-input mt-1 w-full">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sección 2: Dirección de entrega -->
+        <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-2">Dirección de Entrega</h3>
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-4">
+            <div>
+                <label for="direccion" class="block text-gray-700">Dirección</label>
+                <input type="text" id="direccion" name="direccion" class="form-input mt-1 w-full">
+            </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-4">
+            <div>
+                <label for="departamento" class="block text-gray-700">Departamento</label>
+                <input type="text" id="departamento" name="departamento" class="form-input mt-1 w-full">
+            </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-4">
+            <div>
+                <label for="municipio" class="block text-gray-700">Municipio</label>
+                <input type="text" id="municipio" name="municipio" class="form-input mt-1 w-full">
+            </div>
+            </div>
+        </div>
+        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Enviar</button>
+
+        <!-- Sección 3: Datos de tarjeta -->
+       
+    </div>
+</body>
+</html>

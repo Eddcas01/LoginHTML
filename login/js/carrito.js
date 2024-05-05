@@ -120,34 +120,11 @@ function imprimirCarrito() {
   }
 }
 
-function ContarElementosCarrito(){
-  var carrito = localStorage.getItem("carrito");
-  if (carrito) {
-    carrito = JSON.parse(carrito);
-    var total = 0;
-    carrito.forEach(function (producto) {
-      total += producto.cantidad;
-    });
 
-    var cantidadCarrito = document.getElementById("contador-productos");
-    cantidadCarrito.innerHTML = "";
-      
-    var totalHTML = `
-
-    <span class="text-xs font-bold">${total}</span>
-    
-    `
-    cantidadCarrito.innerHTML += totalHTML;
-
-    
-  
-}
-
-}
 
 // Llamar a la función para imprimir el carrito cuando la página se cargue
 window.onload = function () {
   imprimirCarrito();
   SumarPrecioTotal();
-  ContarElementosCarrito();
+
 };

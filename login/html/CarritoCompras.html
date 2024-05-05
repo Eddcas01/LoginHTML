@@ -84,9 +84,7 @@
           </h3>
           <div class="bg-white rounded shadow-md p-4">
             <!-- Total -->
-            <div id="total" class="flex justify-between mb-4">
-            
-            </div>
+            <div id="total" class="flex justify-between mb-4"></div>
             <!-- Métodos de Pago -->
             <div class="mb-4">
               <h4 class="font-semibold mb-2">Métodos de Pago</h4>
@@ -94,6 +92,7 @@
                 <label class="inline-flex items-center mb-2">
                   <button
                     type="button"
+                    onclick="window.location.href = '/LoginHTML/login/html/FormularioPago.html';"
                     class="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-800 dark:bg-white dark:border-gray-700 dark:text-gray-900 dark:hover:bg-gray-200 me-2 mb-2"
                   >
                     <svg
@@ -156,9 +155,37 @@
                     MASTERCARD
                   </button>
                 </label>
+
+                <label class="inline-flex items-center mb-2">
+                  <button
+                    type="button"
+                    onclick="window.location.href = '/LoginHTML/login/html/FormularioPagoCE.html';"
+                    class="text-gray-900 border border-gray-200 bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2"
+                  >
+                    <svg
+                      class="w-6 h-6 text-gray-800 dark:text-white"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 7h6l2 4m-8-4v8m0-8V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v9h2m8 0H9m4 0h2m4 0h2v-4m0 0h-5m3.5 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm-10 0a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
+                      />
+                    </svg>
+
+                    Pago Contra Entrega
+                  </button>
+                </label>
               </div>
             </div>
-            <div class="flex justify-end">
+            <!-- <div class="flex justify-end">
               <button
                 class="text-white px-4 py-2 rounded btnprinc inline-flex"
                 onclick="SumarPrecioTotal()"
@@ -183,7 +210,7 @@
 
                 Pagar
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
