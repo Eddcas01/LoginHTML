@@ -84,8 +84,9 @@ body {
 }
 
 .icon-user {
-    width: 22px;
-    height: 22px;
+    width: 2rem; /* w-8 */
+    height: 2rem; /* h-8 */
+    cursor: pointer;
     margin-right: 20px;
     color: #fff;
     position: relative;
@@ -139,7 +140,7 @@ body {
     background-color: #555;
     padding: 10px;
     position: fixed;
-    bottom: 50px;
+    bottom: 23px;
     width: 100%;
     z-index: 1;
 }
